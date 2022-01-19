@@ -1,0 +1,179 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Courier New', monospace;
+}
+
+.contenedor{
+    padding: 30px 50px 0 50px;
+    animation: myAnim 2s ease 0s 1 normal none;
+}
+.img-web{
+    display:block;
+    margin:auto;    
+    width: 70%;
+    padding-top: 10px;
+}
+.img-movil{
+    display: none;
+    margin:auto;    
+    width: 70%;
+    padding-top: 10px;
+}
+.superior{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    width: 70%;
+    height: 100px;
+    background-color: #6667AB;
+    padding: 0 10px 20px 10px;
+    text-align: center;
+}
+h3{
+    color: #ffff;
+    font-size: 120px;
+    text-shadow: 4px 2px 11px #949494;
+}
+.calendario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-dia{
+    width: 28%;
+    height: 220px;
+    background-color: #50518d;
+    padding: 10px;
+    text-align: center;
+    color: #FFFF;
+    box-shadow: 5px 5px 50px #47636b;
+}
+.Miercoles{
+    font-size: 20px;
+}
+.dia17{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 120px;
+}
+.enero{
+    font-size: 18px;
+}
+.tabla{
+    width: 40%;
+    border: 1px solid #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 50px #47636b;
+    padding: 15px;
+}
+.dias-tabla{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    color: rgb(0, 0, 0);
+}
+td{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px 5px 10px;
+}
+
+span{
+    padding: 7px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #6667AB;
+    color: #ffff;
+    font-weight: bold;
+
+}
+.dia-opaco{
+    font-size: 15px;
+    color: rgb(175, 175, 175);
+}
+.fin-semana{
+    color: rgb(216, 60, 60);
+}
+@keyframes myAnim {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+  
+    15% {
+      transform: translateX(-30px) rotate(6deg);
+    }
+  
+    30% {
+      transform: translateX(15px) rotate(-6deg);
+    }
+  
+    45% {
+      transform: translateX(-15px) rotate(3.6deg);
+    }
+  
+    60% {
+      transform: translateX(9px) rotate(-2.4deg);
+    }
+  
+    75% {
+      transform: translateX(-6px) rotate(1.2deg);
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .img-web{
+        display: none;
+    }
+    .img-movil{
+        display: block;
+        padding-top: 50px;
+        width: 100%;
+    }
+    h3{
+        font-size: 50px;
+    }
+    .banner{
+        width: 100%;
+        height: 35px;
+    }
+    .calendario{
+        width: 100%;
+        display: block;
+    }
+    .contenedor-dia{
+        width: 100%;
+        padding:20px 0 20px 0;
+    }
+    .tabla{
+        width: 100%;
+        border: 1px solid #000000;
+        background-color: rgb(255, 255, 255);
+        box-shadow: none;
+        padding: 0px;
+    }
+    td{
+        font-size: 15px;
+        padding: 10px 12px 10px 12px;
+    }
+    .dias-tabla{
+        padding: 5px;
+        border-bottom: 1px solid #000000;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .contenedor{
+        padding: 0px 20px 0 20px;
+    }
+}
